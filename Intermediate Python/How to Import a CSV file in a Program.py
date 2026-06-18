@@ -35,7 +35,7 @@ import pandas as pd
 df = pd.read_csv('students.csv')
 
 # 2. Display the raw table
-print("--- Raw Data Table ---")
+print("  Raw Data Table:  ")
 print(df)
 print("\n")
 
