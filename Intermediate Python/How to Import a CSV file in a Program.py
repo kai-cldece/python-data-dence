@@ -39,7 +39,7 @@ print("  Raw Data Table:  ")
 print(df)
 print("\n")
 
-# 3. Do some basic data programming!
+# 3. Practice the data programming.
 # Let's find the average grade of all students
 average_grade = df['Grade'].mean()
 
