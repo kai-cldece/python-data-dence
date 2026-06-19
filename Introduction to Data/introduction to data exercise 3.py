@@ -8,9 +8,9 @@ Customer 1: Name: "Alice", Tier: "VIP", Spent: 150.00
 Customer 2: Name: "Bob", Tier: "Basic", Spent: 45.50
 Customer 3: Name: "Charlie", Tier: "VIP", Spent: 200.00
 2. Create a variable called vip_total and set it to 0. (This will hold our running total).
-Write a for loop to check each customer in the list.
-3. Inside the loop, use an if statement: If the customer's "tier" is exactly equal to "VIP", add their "spent" amount to your vip_total variable.
-4. Finally, print the vip_total.
+3. Write a for loop to check each customer in the list.
+4. Inside the loop, use an if statement: If the customer's "tier" is exactly equal to "VIP", add their "spent" amount to your vip_total variable.
+5. Finally, print the vip_total.
 """
 
 # 1. A list containing multiple dictionaries
