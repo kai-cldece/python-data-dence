@@ -13,17 +13,17 @@ NOTE: This is only an example CSV file for better understanding
 
 import pandas as pd
 
-# 1 & 2. Loading the hypothetical CSV file
-df = pd.read_csv("sales_data.csv")
+# 1. Loading the hypothetical CSV file
+df = pd.read_csv("employee_records.csv")
 
-# 3. Checking the first 5 rows
-print("--- First 5 Rows ---")
-print(df.head())
+# 2. Filling missing bonus data with 0
+# The inplace=True argument permanently updates the existing DataFrame, 
+# or you could do: df["Bonus"] = df["Bonus"].fillna(0)
+df["Bonus"].fillna(0, inplace=True) 
 
-# 4. Checking the structure and data types
-print("\n--- DataFrame Info ---")
-df.info()
+# 3. Filtering the DataFrame
+engineering_team = df[df["Department"] == "Engineering"]
 
-# 5. Calculating total revenue
-total_revenue = df["Revenue"].sum()
-print(f"\nTotal Revenue for the day: ${total_revenue}")
+# 4. Printing the final filtered result
+print("--- Engineering Department Data ---")
+print(engineering_team)
